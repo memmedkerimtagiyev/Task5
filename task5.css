@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: flex-end;
+}
+main {
+    font-family: "Saira Extra Condensed", sans-serif;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 200px 0 200px 0;
+    padding: 0 50px 0 50px;
+    
+  }
+a {
+    text-decoration: none;
+    color: white;
+  }
+  li {
+    list-style-type: none;
+    padding: 10px;
+  }
+/* --NAVBAR-- */
+.navbar {
+  background-color: #bd5d38;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.navlist {
+  font-family: sans-serif;
+  font-weight: bold;
+  opacity: 0.8;
+}
+img {
+  width: 50%;
+  border-radius: 50%;
+  aspect-ratio: 0.1/0.1;
+  margin: 0 auto;
+  border: 8px solid #ca7d60;
+}
+
+/* --RESPONSIVE NAVBAR-- */
+
+#fa-bars {
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+}
+.fa-bars:active {
+  border: 5px solid wheat;
+}
+.navname {
+  color: white;
+  text-transform: uppercase;
+  display: none;
+}
+
+/* --ABOUT SECTION-- */
+
+.email {
+  color: #bd5d38;
+  font-weight: bold;
+}
+.email:hover {
+  color: rgb(183, 46, 15);
+}
+.name {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #343a40;
+}
+.name::after {
+  content: " TAYLOR";
+  color: #bd5d38;
+}
+.icons {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.icon {
+  border-radius: 50%;
+  background-color: #495057;
+  display: inline-block;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  margin: 15px;
+  width: 60px;
+  height: 60px;
+  display: grid;
+  text-align: center;
+  transition: all;
+}
+.icon:hover {
+  background-color: #bd5d38;
+}
+
+/* --SPACKİNG AND WIDTH BETWEEN SECTIONS-- */
+
+.cart {
+  margin: 60px 0px 10px;
+  width: 80%;
+}
+
+/* --HISTORY-- */
+
+.date {
+  color: #bd5d38;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* --FONT TYPE AND FORM-- */
+
+main h2,h3 {
+  font-weight: 500;
+  line-height: 1.2;
+  color: #343a40;
+}
+main .h4-title,.p-title{
+    color: #212529;
+    opacity: 0.7;
+}
+
+.h2-title {
+  margin: 100px 0px 60px;
+  font-size: calc(1.475rem + 2.7vw);
+}
+.h3-title {
+  margin-bottom: 10px;
+  font-size: calc(1.325rem + 0.9vw);
+}
+.h4-title {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.p-title {
+  font-size: 20px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+hr {
+  margin-top: 100px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* --AWARDS ICONS-- */
+
+.fa-trophy {
+  color: gold;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .name{
+    font-size: 5rem;
+  }
+  .navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    font-family: "Saira Extra Condensed", sans-serif;
+  }
+  .navlist{
+    display:none ;
+  }
+
+  #fa-bars{
+    position: absolute;
+    display: flex;
+    right: 20px;
+    top: 17px;
+    opacity: 0.6;
+  }
+
+  .navname {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  main {
+    width: 100%;
+  }
+  .date {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="task5.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@200;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+
+  <body>
+    <!-- --NAVBAR-- -->
+
+    <nav class="navbar">
+      <ul class="navlist">
+        <li>
+          <img
+            src="data:image/jpeg;base64,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"
+            alt=""
+          />
+        </li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#expreience">EXPERIENCE</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#interests">INTERESTS</a></li>
+        <li><a href="#awards">AWARDS</a></li>
+      </ul>
+      <a href="#"  id="fa-bars"><i class="fa-solid fa-bars"></i></a>
+      <h1 class="navname">clarance taylor</h1>
+    </nav>
+    <!-- --MAIN SECTIONS-- -->
+    <main>
+      <section id="about">
+        <div class="title">
+          <h1 class="name">CLARENCE</h1>
+
+          <h4 class="h4-title">
+            3542 BERRY STREET · CHEYENNE WELLS, CO 80810 · (317) 585-8468 ·
+            <a href="#" class="email">NAME@EMAIL.COM</a>
+          </h4>
+          <p class="p-title">
+            I am experienced in leveraging agile frameworks to provide a robust
+            synopsis for high level overviews. Iterative approaches to corporate
+            strategy foster collaborative thinking to further the overall value
+            proposition.
+          </p>
+          <div class="icons">
+            <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="icon"><i class="fa-brands fa-github"></i></div>
+            <div class="icon"><i class="fa-brands fa-twitter"></i></div>
+            <div class="icon"><i class="fa-brands fa-facebook-f"></i></div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section id="expreience">
+        <h2 class="h2-title">EXPERIENCE</h2>
+        <div class="cart">
+          <h3 class="h3-title">SENIOR WEB DEVELOPER</h3>
+          <h4 class="h4-title">INTELITEC SOLUTIONS</h4>
+          <p class="p-title">
+            Bring to the table win-win survival strategies to ensure proactive
+            domination. At the end of the day, going forward, a new normal that
+            has evolved from generation X is on the runway heading towards a
+            streamlined cloud solution. User generated content in real-time will
+            have multiple touchpoints for offshoring.
+          </p>
+        </div>
+        <span class="date">March 2013 - Present</span>
+        <div class="cart">
+          <h3 class="h3-title">WEB DEVELOPER</h3>
+          <h4 class="h4-title">INTELITEC SOLUTIONS</h4>
+          <p class="p-title">
+            Capitalize on low hanging fruit to identify a ballpark value added
+            activity to beta test. Override the digital divide with additional
+            clickthroughs from DevOps. Nanotechnology immersion along the
+            information highway will close the loop on focusing solely on the
+            bottom line.
+          </p>
+        </div>
+        <span class="date">December 2011 - March 2013</span>
+        <div class="cart">
+          <h3 class="h3-title">JUNIOR WEB DESIGNER</h3>
+          <h4 class="h4-title">SHOUT! MEDIA PRODUCTIONS</h4>
+          <p class="p-title">
+            Podcasting operational change management inside of workflows to
+            establish a framework. Taking seamless key performance indicators
+            offline to maximise the long tail. Keeping your eye on the ball
+            while performing a deep dive on the start-up mentality to derive
+            convergence on cross-platform integration.
+          </p>
+        </div>
+        <span class="date">July 2010 - December 2011</span>
+        <div class="cart">
+          <h3 class="h3-title">WEB DESIGN INTERN</h3>
+          <h4 class="h4-title">SHOUT! MEDIA PRODUCTIONS</h4>
+          <p class="p-title">
+            Collaboratively administrate empowered markets via plug-and-play
+            networks. Dynamically procrastinate B2C users after installed base
+            benefits. Dramatically visualize customer directed convergence
+            without revolutionary ROI.
+          </p>
+        </div>
+        <span class="date">September 2008 - June 2010</span>
+      </section>
+      <hr />
+      <section id="education">
+        <h2 class="h2-title">EDUCATION</h2>
+        <div class="cart">
+          <h3 class="h3-title">UNIVERSITY OF COLORADO BOULDER</h3>
+          <h4 class="h4-title">BACHELOR OF SCIENCE</h4>
+          <p class="p-title">
+            Computer Science - Web Development Track <br />
+            GPA: 3.23
+          </p>
+        </div>
+        <span class="date">August 2006 - May 2010</span>
+        <div class="cart">
+          <h3 class="h3-title">JAMES BUCHANAN HIGH SCHOOL</h3>
+          <h4 class="h4-title">TECHNOLOGY MAGNET PROGRAM</h4>
+
+          <p class="p-title">GPA: 3.56</p>
+        </div>
+        <span class="date">August 2002 - May 2006</span>
+      </section>
+      <hr />
+      <section id="skills">
+        <h2 class="h2-title">SKILLS</h2>
+        <h4 class="h4-title">PROGRAMMING LANGUAGES & TOOLS</h4>
+        <h4 class="h4-title">WORKFLOW</h4>
+        <ul class="workflows p-title">
+          <li><i class="fa fa-check"></i> Mobile-First, Responsive Design</li>
+          <li><i class="fa fa-check"></i>Cross Browser Testing & Debugging</li>
+          <li><i class="fa fa-check"></i>Cross Functional Teams</li>
+          <li><i class="fa fa-check"></i>Agile Development & Scrum</li>
+        </ul>
+      </section>
+      <hr />
+      <section id="interests">
+        <h2 class="h2-title">INTERESTS</h2>
+        <p class="p-title">
+          Apart from being a web developer, I enjoy most of my time being
+          outdoors. In the winter, I am an avid skier and novice ice climber.
+          During the warmer months here in Colorado, I enjoy mountain biking,
+          free climbing, and kayaking.
+          <br /><br />
+          When forced indoors, I follow a number of sci-fi and fantasy genre
+          movies and television shows, I am an aspiring chef, and I spend a
+          large amount of my free time exploring the latest technology
+          advancements in the front-end web development world.
+        </p>
+      </section>
+      <hr />
+      <section id="awards">
+        <h2 class="h2-title">AWARDS & CERTIFICATIONS</h2>
+        <ul class="awards-list p-title">
+          <li>
+            <i class="fa-solid fa-trophy"></i>Google Analytics Certified
+            Developer
+          </li>
+          <li>
+            <i class="fa-solid fa-trophy"></i>Mobile Web Specialist - Google
+            Certification
+          </li>
+          <li>
+            <i class="fa-solid fa-trophy"></i>1 st Place - University of
+            Colorado Boulder - Emerging Tech Competition 2009
+          </li>
+          <li>
+            <i class="fa-solid fa-trophy"></i>1 st Place - University of
+            Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+          </li>
+          <li>
+            <i class="fa-solid fa-trophy"></i>2 nd Place - University of
+            Colorado Boulder - Emerging Tech Competition 2008
+          </li>
+          <li>
+            <i class="fa-solid fa-trophy"></i>1 st Place - James Buchanan High
+            School - Hackathon 2006
+          </li>
+          <li>
+            <i class="fa-solid fa-trophy"></i>3 rd Place - James Buchanan High
+            School - Hackathon 2005
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
